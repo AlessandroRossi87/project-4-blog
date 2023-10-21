@@ -30,7 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['project4-pinboard.herokuapp.com', '8000-alessandrorossi87-projec-6vou1pnqs2.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['project4-pinboard.herokuapp.com',
+                 '8000-alessandrorossi87-projec-6vou1pnqs2.us2.codeanyapp.com', 'project4-pinboard-1c32e796b2e1.herokuapp.com']
 
 
 # Application definition
