@@ -81,9 +81,13 @@ class PostLike(View):
 
 def category(request, category_name):
     category = get_object_or_404(Category, name=category_name)
-    posts = Post.objects.filter(category=category, active=True)
+    posts = Post.objects.filter(
+        category=category, status=1).order_by('-created_on')
+
+    categories = Category.objects.all()
 
     return render(request, 'index.html', {
         'category': category,
         'posts': posts,
+        'categories': categories,
     })

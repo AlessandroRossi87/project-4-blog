@@ -2,6 +2,14 @@
 
 <div class="container-fluid">
   <div class="row">
+    <!-- Category Filter -->
+    {% for category in categories %}
+    <div class="col-12 mt-3 left">
+      <h2 class="card-title">{{ category.name }}</h2>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row">
     <!-- Blog Entries Column -->
     <div class="col-12 mt-3 left">
       <div class="row">
