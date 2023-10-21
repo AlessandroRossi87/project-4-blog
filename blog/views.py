@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
-from .models import Post
+from .models import Post, Category
 
 
 class PostList(generic.ListView):
@@ -11,7 +11,7 @@ class PostList(generic.ListView):
 
 
 def category(request, category_name):
-    category = get_object_or_404(Category, id=category_name)
+    category = get_object_or_404(Category, name=category_name)
     posts = Post.objects.filter(category=category, active=True)
 
     return render(request, 'index.html', {
