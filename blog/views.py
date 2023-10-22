@@ -83,6 +83,28 @@ class NewPost(View):
         return render(request, 'new_post.html', {'form': form})
 
 
+class EditPost(View):
+    def get(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+
+        if request.user == post.author:
+            form = NewPostForm(instance=post)
+            return render(request, 'new_post.html', {'form': form, 'post': post, 'editing': True})
+        else:
+            return redirect('post_detail', slug=slug)
+
+    def post(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+
+        if request.user == post.author:
+            form = NewPostForm(request.POST, instance=post)
+            if form.is_valid():
+                form.save()
+                return redirect('post_detail', slug=slug)
+        else:
+            return redirect('post_detail', slug=slug)
+
+
 class PostLike(View):
 
     def post(self, request, slug):

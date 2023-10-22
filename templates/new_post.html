@@ -1,7 +1,9 @@
 {% extends 'base.html' %} {% block content %}
-<h2>Post an Alert!</h2>
+<h2>{% if editing %}Edit{% else %}Post{% endif %} an Alert</h2>
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %} {{ form.as_p }}
-  <button type="submit">Submit</button>
+  <button type="submit">
+    {% if editing %}Update{% else %}Submit{% endif %}
+  </button>
 </form>
 {% endblock %}
