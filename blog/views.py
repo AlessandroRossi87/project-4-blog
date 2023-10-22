@@ -11,6 +11,14 @@ class PostList(generic.ListView):
     template_name = "index.html"
     paginate_by = 6
 
+    def get_queryset(self):
+        queryset = Post.objects.filter(status=1).order_by('-created_on')
+        category_id = self.request.GET.get('category')
+        if category_id:
+            queryset = queryset.filter(category_id=category_id)
+
+        return queryset
+
 
 class PostDetail(View):
 
@@ -117,7 +125,6 @@ class DeletePost(View):
 
 
 class PostLike(View):
-
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -129,11 +136,10 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-def category(request, category_name):
-    category = get_object_or_404(Category, name=category_name)
+def category(request, category_id):
+    category = get_object_or_404(Category, id=category_id)
     posts = Post.objects.filter(
         category=category, status=1).order_by('-created_on')
-
     categories = Category.objects.all()
 
     return render(request, 'index.html', {
