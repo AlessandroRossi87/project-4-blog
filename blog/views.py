@@ -1,8 +1,8 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post, Category
-from .forms import CommentForm
+from .forms import CommentForm, NewPostForm
 
 
 class PostList(generic.ListView):
@@ -66,6 +66,23 @@ class PostDetail(View):
         )
 
 
+class NewPost(View):
+    def get(self, request):
+        form = NewPostForm()
+        return render(request, 'new_post.html', {'form': form})
+
+    def post(self, request):
+        form = NewPostForm(request.POST, request.FILES)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+
+            return HttpResponseRedirect(reverse('post_detail', args=[post.slug]))
+
+        return render(request, 'new_post.html', {'form': form})
+
+
 class PostLike(View):
 
     def post(self, request, slug):
@@ -91,3 +108,23 @@ def category(request, category_name):
         'posts': posts,
         'categories': categories,
     })
+
+
+# @login_required
+# def new(request):
+#    if request.method == 'POST':
+#        form = NewPostForm(request.POST, request.FILES)
+#
+#        if form.is_valid():
+#            post = form.save(commit=False)
+#            post.created_by = request.user
+#            post.save()
+#
+#            return redirect('post_detail', pk=post.id)
+#    else:
+#        form = NewPostForm()
+#
+#    return render(request, 'form.html', {
+#        'form': form,
+#        'title': 'Post new Alert',
+#    })
