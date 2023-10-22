@@ -105,6 +105,17 @@ class EditPost(View):
             return redirect('post_detail', slug=slug)
 
 
+class DeletePost(View):
+    def get(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+
+        if request.user == post.author:
+            post.delete()
+            return redirect('home')
+        else:
+            return redirect('post_detail', slug=slug)
+
+
 class PostLike(View):
 
     def post(self, request, slug):
