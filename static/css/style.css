@@ -146,7 +146,7 @@ nav .menu a {
 }
 
 .hero .left {
-    background-image: url('/media/hero.jpeg');
+    background-image: url('../media/hero.png');
     background-size: cover;
     height: 60vh;
     background-repeat: no-repeat;
@@ -185,14 +185,14 @@ nav .menu a {
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    /* grid-template-columns: 2fr 1fr; */
     margin-top: 50px;
     grid-gap: 60px;
 }
 
 .blog {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     grid-gap: 48px;
 }
 
@@ -231,4 +231,36 @@ main {
     .blog {
         grid-template-columns: 1fr;
     }
+}
+
+/* Footer */
+
+footer {
+    background-color: #212124;
+    margin-top: 50px;
+    padding: 100px 0;
+}
+
+footer p,
+a {
+    color: #9b9ca1;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.social-icons i {
+    color: var(--secondary-color);
+    font-size: 16px;
+    border: 1px slid var(--secondary-color);
+    border-radius: 50%;
+    padding: 8px;
 }

@@ -21,7 +21,7 @@
     <div class="site-container">
         <nav>
             <div class="logo">
-                <h2>Schöneberg Alert</h2>
+                <h2>Schöneberg <i class="fa-regular fa-bell"></i> Alert</h2>
             </div>
             <div class="menu">
                 <a href="{% url 'home' %}">Home</a>
@@ -56,13 +56,32 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">Made by Alessandro Rossi</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
-        </p>
+    <footer>
+        <div class="site-container">
+            <div class="footer-box">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a href="{% url 'account_logout' %}">Logout</a></li>
+                        <li><a href="{% url 'new_post' %}">Post an Alert</a></li>
+                        {% else %}
+                        <li><a href="{% url 'account_signup' %}">Register</a></li>
+                        <li><a href="{% url 'account_login' %}">Log in</a></li>
+                        {% endif %}
+                        <p>Created by Alessandro Rossi</p>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (Opens in a new tab)"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (Opens in a new tab)"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (Opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
     <script>
         setTimeout(function() {
@@ -74,5 +93,4 @@
     <script src="../static/script/script.js"></script>
     <script src="https://kit.fontawesome.com/3944192ca3.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
