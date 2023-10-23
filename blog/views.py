@@ -8,33 +8,24 @@ from django.db.models import Q
 
 class PostList(generic.ListView):
     model = Post
-    # queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 6
 
-    # def get_queryset(self):
-    #    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    #    category_id = self.request.GET.get('category')
-    #    if category_id:
-    #        queryset = queryset.filter(category_id=category_id)
-    #
-    #    return queryset
-
-    def posts(self, request):
+    def get(self, request):
         query = request.GET.get('query', '')
         category_id = request.GET.get('category', 0)
         categories = Category.objects.all()
-        posts = Post.objects.filter(is_sold=False)
+        post_list = Post.objects.all()
 
         if category_id:
-            posts = posts.filter(category_id=category_id)
+            post_list = post_list.filter(category_id=category_id)
 
         if query:
-            posts = posts.filter(Q(name__icontains=query) |
-                                 Q(description__icontains=query))
+            post_list = post_list.filter(Q(name__icontains=query) |
+                                         Q(description__icontains=query))
 
         return render(request, 'index.html', {
-            'posts': posts,
+            'post_list': post_list,
             'query': query,
             'categories': categories,
             'category_id': int(category_id)
