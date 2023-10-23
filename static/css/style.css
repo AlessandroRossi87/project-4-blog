@@ -44,6 +44,10 @@ h1 {
     font-size: 4rem;
 }
 
+button {
+    font-size: 2rem;
+}
+
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -146,7 +150,7 @@ nav .menu a {
 }
 
 .hero .left {
-    background-image: url("../media/hero.png");
+    background-image: url("./media/hero.png");
     background-size: cover;
     height: 60vh;
     background-repeat: no-repeat;
@@ -263,4 +267,47 @@ a {
     border: 1px slid var(--secondary-color);
     border-radius: 50%;
     padding: 8px;
+}
+
+/* Category */
+
+.category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.category-filter ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.category-filter li {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.category-filter a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.category-filter li {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Account pages */
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
