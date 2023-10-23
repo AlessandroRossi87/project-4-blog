@@ -11,12 +11,19 @@
   <div class="row">
     <!-- Category Filter -->
     <div class="col-12 mt-3 left">
-      <a href="{% url 'home' %}">Reset Filter</a>
-      {% for category in categories %}
-      <a href="{% url 'home' %}?query={{ query }}&category={{ category_id }}"
-        >{{ category.name }}</a
-      >
-      {% endfor %}
+      <a href="{% url 'home' %}">Clear Filter</a>
+      <ul>
+        {% for category in categories %}
+        <li
+          class="py-2 px-2 rounded-xl{% if category.id == category_id %} bg-gray-200{% endif %}"
+        >
+          <a
+            href="{% url 'home' %}?query={{ query }}&category={{ category.id }}"
+            >{{ category.name }}</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
   <div class="row">

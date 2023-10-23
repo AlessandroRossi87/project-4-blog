@@ -31,7 +31,8 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
+    category = models.ForeignKey(
+        Category, related_name='posts', on_delete=models.CASCADE)  # null=True
 
     class Meta:
         ordering = ["-created_on"]
