@@ -150,7 +150,7 @@ nav .menu a {
 }
 
 .hero .left {
-    /* background-image: url("/media/hero.jpeg"); */
+    background-image: url("/media/hero.png");
     background-size: cover;
     height: 60vh;
     background-repeat: no-repeat;
@@ -158,7 +158,7 @@ nav .menu a {
 }
 
 .hero .right {
-    background-color: #c8d366;
+    background-color: #66c1d3;
 }
 
 .hero .content-box {
