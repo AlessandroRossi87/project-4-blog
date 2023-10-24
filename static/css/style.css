@@ -150,7 +150,7 @@ nav .menu a {
 }
 
 .hero .left {
-    background-image: url("./media/hero.png");
+    background-image: url("media/hero.png");
     background-size: cover;
     height: 60vh;
     background-repeat: no-repeat;
