@@ -52,6 +52,7 @@ button {
     text-decoration: none;
 }
 
+
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -169,7 +170,7 @@ nav .menu a {
     position: absolute;
     background-color: #fffffc;
     padding: 32px;
-    width: 35%;
+    width: 45%;
     top: 50%;
     left: 65%;
     transform: translate(-40%, -50%);
@@ -189,18 +190,28 @@ nav .menu a {
     }
 }
 
+/* New Blog */
+
+.container {
+  max-width: 1335px;
+  margin: 0 auto;
+}
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
 /* Blog */
 
 main {
     display: grid;
-    /* grid-template-columns: 2fr 1fr; */
     margin-top: 50px;
     grid-gap: 60px;
 }
 
 .blog {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-gap: 48px;
 }
 

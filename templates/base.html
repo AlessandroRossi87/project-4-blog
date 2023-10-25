@@ -21,13 +21,13 @@
     <div class="site-container">
         <nav>
             <div class="logo">
-                <a href="{% url 'home' %}"><h2>Schöneberg <i class="fa-regular fa-bell"></i> Alert</h2></a>
+                <a href="{% url 'home' %}"><h2>Schöneberg <i class="fa-regular fa-bell" style="color: #c51616"></i> Alert</h2></a>
             </div>
             <div class="menu">
                 <a href="{% url 'home' %}">Home</a>
                 {% if user.is_authenticated %}
                 <a href="{% url 'account_logout' %}">Logout</a>
-                <a href="{% url 'new_post' %}">Post an Alert</a>
+                <a href="{% url 'new_post' %}">Post an <span style="color: #c51616">Alert</span></a>
                 {% else %}
                 <a href="{% url 'account_signup' %}">Register</a>
                 <a href="{% url 'account_login' %}">Log in</a>
