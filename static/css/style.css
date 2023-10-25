@@ -48,6 +48,10 @@ button {
     font-size: 2rem;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -150,7 +154,7 @@ nav .menu a {
 }
 
 .hero .left {
-    background-image: url("/media/hero.png");
+    background-image: url("https://res.cloudinary.com/dg6tnws5o/image/upload/v1698224723/hero_udmd4u.png");
     background-size: cover;
     height: 60vh;
     background-repeat: no-repeat;
