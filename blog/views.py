@@ -96,7 +96,7 @@ class NewPost(View):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
-            unique_id = uuid.uuid4().hex[:5] 
+            unique_id = uuid.uuid4().hex[:5]
             post.slug = f"{slugify(post.title)}-{unique_id}"
             post.save()
 

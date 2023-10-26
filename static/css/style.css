@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #202020;
-    --secondary-color:#f4f7fc;
+    --secondary-color: #f4f7fc;
     --grey: #a6a6a6;
 }
 
@@ -51,7 +51,6 @@ button {
 .logo a {
     text-decoration: none;
 }
-
 
 @media only screen and (max-width: 768px) {
     h1 {
@@ -120,7 +119,7 @@ nav .menu a {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .mobile-menu {
         display: block;
         font-size: 24px;
@@ -176,7 +175,7 @@ nav .menu a {
     transform: translate(-40%, -50%);
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
     }
@@ -192,65 +191,143 @@ nav .menu a {
 
 /* New Blog */
 
-.container {
-  max-width: 1335px;
-  margin: 0 auto;
+#blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid #202020;
 }
-.grid-row {
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.blog-box {
+    width: 350px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    margin: 20px;
+}
+
+.blog-img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text span {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.blog-text .blog-title:hover {
+    color: #c51616;
+    transition: all ease 0.3s;
+}
+
+.blog-text p {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 20px 0px;
+}
+
+@media screen and (max-width: 1250px) {
+    .blog-box {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .blog-box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-box {
+        margin: 20px 10px;
+        width: 100%;
+    }
+
+    #blog {
+        padding: 20px;
+    }
+}
+
+/* Blog
+
+.blog-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
-/* Blog */
-
-main {
-    display: grid;
-    margin-top: 50px;
-    grid-gap: 60px;
+  flex-wrap: wrap;
 }
 
 .blog {
-    display: grid;
-    grid-gap: 48px;
+  width: calc(50% -20px);
+  margin: 10px;
 }
 
-.blog .thumbnail {
+/* .blog .thumbnail {
     object-fit: contain;
 }
 
 .blog-post {
-    background-color: var(--secondary-color);
-    margin: 24px 0;
-    padding: 16px;
+  background-color: var(--secondary-color);
+  margin: 24px 0;
+  padding: 16px;
 }
 
 .blog-content h3 {
-    font-size: 2.5rem;
-    letter-spacing: 1.5px;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
 }
 
 .blog-content {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .pagination {
-    display: inline-block;
+  display: inline-block;
 }
 
 .pagination a {
-    color: var(--primary-color);
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    border: 0;
+  color: var(--primary-color);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 0;
 }
 
 @media only screen and (max-width: 768px) {
-    .blog {
-        grid-template-columns: 1fr;
-    }
 }
+
+*/
 
 /* Footer */
 
