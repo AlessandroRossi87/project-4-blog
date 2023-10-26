@@ -17,6 +17,8 @@ class PostList(generic.ListView):
         query = request.GET.get('query', '')
         category_id = request.GET.get('category', 0)
         categories = Category.objects.all()
+        category_colors = {category.id: get_category_color(
+            category.id) for category in categories}
         post_list = Post.objects.all()
 
         if category_id:
@@ -30,7 +32,8 @@ class PostList(generic.ListView):
             'post_list': post_list,
             'query': query,
             'categories': categories,
-            'category_id': int(category_id)
+            'category_id': int(category_id),
+            'category_colors': category_colors,
         })
 
 
@@ -161,3 +164,19 @@ def category(request, category_id):
         'posts': posts,
         'categories': categories,
     })
+
+
+def get_category_color(category_id):
+    category_colors = {
+        1: "#FF5733",
+        2: "#FFAF33",
+        3: "#A5FF33",
+        4: "#33FF93",
+        5: "#33F3FF",
+        6: "#3355FF",
+        7: "#9F33FF",
+        8: "#FC33FF",
+        9: "#FF3396",
+    }
+
+    return category_colors.get(category_id, "#FFFFFF")
