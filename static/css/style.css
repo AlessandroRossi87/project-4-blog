@@ -167,7 +167,7 @@ nav .menu a {
 }
 
 .hero .right {
-    background-color: #83c764;
+    background-color: #b8e0a8;
 }
 
 .hero .content-box {
@@ -202,7 +202,6 @@ nav .menu a {
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    border-bottom: 1px solid #202020;
 }
 
 .blog-container {
@@ -359,4 +358,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+    #logout {
+        padding: 100px 0 200px 0;
+    }
+
+    #login {
+        padding: 30px 0 30px 0;
+        border: 0 100px 0 100px;
+    }
 }

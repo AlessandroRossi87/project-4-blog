@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<div class="center-content">
+<div class="center-content" style="background: #b8e0a8">
   <h2>{% if editing %}Edit{% else %}Post{% endif %} an Alert</h2>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %} {{ form.as_p }}
