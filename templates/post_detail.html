@@ -20,7 +20,7 @@
       <div class="d-none d-md-block col-md-6 masthead-image">
         {% if "placeholder" in post.featured_image.url %}
         <img
-          src="https://res.cloudinary.com/dg6tnws5o/image/upload/v1698231387/default_rjx9mz.png"
+          src="https://res.cloudinary.com/dg6tnws5o/image/upload/v1698399023/default2_u9ifqc.png"
           width="100%"
         />
         {% else %}
@@ -117,7 +117,7 @@
         <p>Posting as: {{ user.username }}</p>
         <form method="post" style="margin-top: 1.3em">
           {{ comment_form | crispy }} {% csrf_token %}
-          <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         {% endif %} {% endif %}
       </div>
