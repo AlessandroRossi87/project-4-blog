@@ -3,7 +3,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 
-INPUT_CLASSES = 'w-full py-4 px-6 rounded-xl border'
+# INPUT_CLASSES = 'w-full py-4 px-6 rounded-xl border'
 
 
 class CommentForm(forms.ModelForm):
