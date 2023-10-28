@@ -134,10 +134,13 @@ class EditPost(View):
 class DeletePost(View):
     def get(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
+        return render(request, 'post_delete.html', {'post': post})
 
+    def post(self, request, slug):
+        post = Post.objects.get(slug=slug)
         if request.user == post.author:
-
-            return render(request, 'post_delete.html', {'post': post})
+            post.delete()
+            return redirect('home')
         else:
             return redirect('post_detail', slug=slug)
 

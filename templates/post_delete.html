@@ -9,8 +9,10 @@
   <h1>{% trans "Delete Alert" %}</h1>
 
   <p>{% trans 'Are you sure you want to delete your Alert?' %}</p>
-
-  <a href="{% url 'delete_post' post.slug %}" class="btn btn-danger">Delete</a>
+  <form action="{% url 'post_delete' post.slug %}" method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Confirm</button>
+  </form>
 </div>
 
 {% endblock content %}
