@@ -370,3 +370,18 @@ a {
         border: 0 100px 0 100px;
     }
 }
+
+#login {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    background: #b8e0a8;
+}
+
+#comments-box {
+    padding-left: 10px;
+    padding-right: 10px;
+}

@@ -6,6 +6,7 @@ from .models import Post, Category
 from .forms import CommentForm, NewPostForm
 from django.db.models import Q
 from django.utils.text import slugify
+from django.template import RequestContext
 
 
 class PostList(generic.ListView):
@@ -135,8 +136,8 @@ class DeletePost(View):
         post = get_object_or_404(Post, slug=slug)
 
         if request.user == post.author:
-            post.delete()
-            return redirect('home')
+
+            return render(request, 'post_delete.html', {'post': post})
         else:
             return redirect('post_detail', slug=slug)
 
@@ -180,3 +181,9 @@ def get_category_color(category_id):
     }
 
     return category_colors.get(category_id, "#FFFFFF")
+
+
+def handler404(request, exception):
+    response = render(request, '404.html', {})
+    response.status_code = 404
+    return response

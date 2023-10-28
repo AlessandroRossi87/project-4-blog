@@ -1,5 +1,6 @@
 from . import views
 from django.urls import path
+from django.conf.urls import handler404
 
 
 urlpatterns = [
@@ -10,4 +11,8 @@ urlpatterns = [
     path('category/<int:category_id>/', views.category, name='category'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
+    path('post/<slug:slug>/delete/confirm/',
+         views.DeletePost.as_view(), name='confirm_delete'),
 ]
+
+handler404 = 'blog.views.handler404'

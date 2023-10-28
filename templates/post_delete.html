@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+<!--Stop-->
+{% load i18n %}
+<!--Stop-->
+{% block head_title %}{% trans "Sign Out" %}{% endblock head_title %}
+<!--Stop-->
+{% block content %}
+<div class="center-content" id="logout" style="background: #b8e0a8">
+  <h1>{% trans "Delete Alert" %}</h1>
+
+  <p>{% trans 'Are you sure you want to delete your Alert?' %}</p>
+
+  <a href="{% url 'delete_post' post.slug %}" class="btn btn-danger">Delete</a>
+</div>
+
+{% endblock content %}
