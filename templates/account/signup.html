@@ -18,6 +18,7 @@
     id="signup_form"
     method="post"
     action="{% url 'account_signup' %}"
+    aria-label="Sign up Form"
   >
     {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
     <input
@@ -26,7 +27,7 @@
       value="{{ redirect_field_value }}"
     />
     {% endif %}
-    <button class="btn-primary" type="submit">
+    <button class="btn-primary" type="submit" aria-label="Register">
       {% trans "Register" %} &raquo;
     </button>
   </form>

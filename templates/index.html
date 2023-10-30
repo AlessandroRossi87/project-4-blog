@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 <!-- Hero section -->
-<section class="hero">
+<section class="hero" aria-label="Main Hero Section">
   <div class="left"></div>
   <div class="right">
     <div class="content-box">
@@ -17,13 +17,15 @@
   <div class="category-filter">
     <ul>
       <li>
-        <a href="{% url 'home' %}">Clear Filter</a>
+        <a href="{% url 'home' %}" aria-label="Clear Filter">Clear Filter</a>
       </li>
       {% for category in categories %}
       <li
         class="py-2 px-2 rounded-xl{% if category.id == category_id %} bg-gray-200{% endif %}"
       >
-        <a href="{% url 'home' %}?query={{ query }}&category={{ category.id }}"
+        <a
+          href="{% url 'home' %}?query={{ query }}&category={{ category.id }}"
+          aria-label="Filter by {{ category.name }}"
           >{{ category.name }}</a
         >
       </li>
@@ -32,7 +34,7 @@
   </div>
 </div>
 <!-- New Blog Section-->
-<section id="blog">
+<section id="blog" aria-label="Blog Posts">
   <div class="blog-container">
     {% for post in post_list %}
     <div class="blog-box">

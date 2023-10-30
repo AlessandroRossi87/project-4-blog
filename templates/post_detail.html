@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %} {% load crispy_forms_tags %}
 
-<div class="masthead">
+<div class="masthead" aria-label="Alert Information">
   <div class="container">
     <div class="row g-0">
       <div class="col-md-6 masthead-text">
@@ -10,10 +10,10 @@
         </p>
         <p class="card-text">{{ post.content | safe }}</p>
         {% if user.is_authenticated and user == post.author %}
-        <a href="{% url 'edit_post' post.slug %}" class="btn btn-primary"
+        <a href="{% url 'edit_post' post.slug %}" class="btn btn-primary" aria-label="Edit this post"
           >Edit</a
         >
-        <a href="{% url 'post_delete' post.slug %}" class="btn btn-danger"
+        <a href="{% url 'post_delete' post.slug %}" class="btn btn-danger" aria-label="Delete this post"
           >Delete</a
         >
         {% endif %}
@@ -50,7 +50,8 @@
                   type="submit"
                   name="blogpost_id"
                   value="{{post.slug}}"
-                  class="btn-like"
+                  class="btn-like" 
+                  aria-label="Like post"
                 >
                 <i class="fa-solid fa-heart"></i>
                 </button>
@@ -59,7 +60,8 @@
                   type="submit"
                   name="blogpost_id"
                   value="{{post.slug}}"
-                  class="btn-like"
+                  class="btn-like" 
+                  aria-label="Like post"
                 >
                 <i class="fa-solid fa-heart"></i>
                 </button>

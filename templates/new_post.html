@@ -4,7 +4,11 @@
   <div class="new-post">
     <form method="post" enctype="multipart/form-data">
       {% csrf_token %} {{ form.as_p }}
-      <button class="btn-primary" type="submit">
+      <button
+        class="btn-primary"
+        type="submit"
+        aria-label="{% if editing % %}Update{% else %}Post{% endif %}"
+      >
         {% if editing %}Update{% else %}Post{% endif %}
       </button>
     </form>

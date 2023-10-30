@@ -5,7 +5,12 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock head_title %}
 <!--Stop-->
 {% block content %}
-<div class="center-content" id="logout" style="background: #b8e0a8">
+<div
+  class="center-content"
+  id="logout"
+  style="background: #b8e0a8"
+  aria-label="Logout Confirmation"
+>
   <h1>{% trans "Logout" %}</h1>
 
   <p>{% trans 'Are you sure you want to log out?' %}</p>
@@ -18,7 +23,9 @@
       value="{{ redirect_field_value }}"
     />
     {% endif %}
-    <button class="btn-primary" type="submit">{% trans 'Log out' %}</button>
+    <button class="btn-primary" type="submit" aria-label="Log out">
+      {% trans 'Log out' %}
+    </button>
   </form>
 </div>
 
