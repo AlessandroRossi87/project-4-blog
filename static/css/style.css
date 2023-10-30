@@ -385,3 +385,11 @@ a {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.center-content {
+    background: #b8e0a8;
+}
+
+.form-group {
+    width: 50%;
+}
