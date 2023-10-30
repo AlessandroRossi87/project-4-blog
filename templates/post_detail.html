@@ -55,30 +55,18 @@
                 >
                 <i class="fa-solid fa-heart"></i>
                 </button>
-                {% else %}
-                <button
-                  type="submit"
-                  name="blogpost_id"
-                  value="{{post.slug}}"
-                  class="btn-like" 
-                  aria-label="Like post"
-                >
-                <i class="fa-solid fa-heart"></i>
-                </button>
                 {% endif %}
               </form>
-              {% else %}
-              <span class="text-secondary"><i class="fa-solid fa-heart"></i></span>
-              {% endif %}
-              <span class="text-secondary">{{ post.number_of_likes }} </span>
+            {% endif %}
             </strong>
           </div>
           <div class="col-1">
-            {% with comments.count as total_comments %}
-            <strong class="text-secondary"
-              ><i class="fa-solid fa-comment"></i> {{ total_comments }}</strong
-            >
-            {% endwith %}
+        <span><i class="far fa-heart"></i>
+            <!--Stop line break-->
+            {{ post.number_of_likes }} <i class="far fa-comment"></i>
+            <!--Stop line break-->
+            {{ post.number_of_comments }}
+        </span>
           </div>
         </div>
       </div>

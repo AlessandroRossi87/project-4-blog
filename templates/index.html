@@ -52,10 +52,9 @@
         <span
           >{{ post.created_on}} <i class="far fa-heart"></i>
           <!--Stop line break-->
-          {{ post.number_of_likes }} {% with comments.count as total_comments %}
-          <i class="far fa-comment"></i> {{ total_comments }}
+          {{ post.number_of_likes }} <i class="far fa-comment"></i>
           <!--Stop line break-->
-          {% endwith%}</span
+          {{ post.number_of_comments }}</span
         >
         <a href="{% url 'post_detail' post.slug %}" class="blog-title"
           >{{ post.title }}</a
