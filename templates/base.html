@@ -17,24 +17,23 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <div class="site-container">
         <nav>
             <div class="logo">
-                <a href="{% url 'home' %}"><h2>Schöneberg <i class="fa-regular fa-bell" style="color: #c51616"></i> Alert</h2></a>
+                <a href="{% url 'home' %}" aria-label="Home"><h2>Schöneberg <i class="fa-regular fa-bell" style="color: #c51616"></i> Alert</h2></a>
             </div>
             <div class="menu">
-                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'home' %}" aria-label="Home">Home</a>
                 {% if user.is_authenticated %}
-                <a href="{% url 'account_logout' %}">Logout</a>
-                <a href="{% url 'new_post' %}">Post an <span style="color: #c51616">Alert</span></a>
+                <a href="{% url 'account_logout' %}" aria-label="Logout">Logout</a>
+                <a href="{% url 'new_post' %}" aria-label="Post an Alert">Post an <span style="color: #c51616">Alert</span></a>
                 {% else %}
-                <a href="{% url 'account_signup' %}">Register</a>
-                <a href="{% url 'account_login' %}">Log in</a>
+                <a href="{% url 'account_signup' %}" aria-label="Register">Register</a>
+                <a href="{% url 'account_login' %}" aria-label="Log in">Log in</a>
                 {% endif %}
             </div>
-            <div class="mobile-menu">
+            <div class="mobile-menu" aria-label="Open mobile menu">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
@@ -54,7 +53,7 @@
         </div>
     </div>
         {% block content %}
-        <!-- Content Goes here -->
+    <!-- Content Goes here -->
         {% endblock content %}
     <!-- Footer -->
     <footer>
@@ -62,13 +61,13 @@
             <div class="footer-box">
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}" aria-label="Home">Home</a></li>
                         {% if user.is_authenticated %}
-                        <li><a href="{% url 'account_logout' %}">Logout</a></li>
-                        <li><a href="{% url 'new_post' %}">Post an Alert</a></li>
+                        <li><a href="{% url 'account_logout' %}" aria-label="Logout">Logout</a></li>
+                        <li><a href="{% url 'new_post' %}" aria-label="Post an Alert">Post an Alert</a></li>
                         {% else %}
-                        <li><a href="{% url 'account_signup' %}">Register</a></li>
-                        <li><a href="{% url 'account_login' %}">Log in</a></li>
+                        <li><a href="{% url 'account_signup' %}" aria-label="Register">Register</a></li>
+                        <li><a href="{% url 'account_login' %}" aria-label="Log in">Log in</a></li>
                         {% endif %}
                         <p>Created by Alessandro Rossi</p>
                     </ul>

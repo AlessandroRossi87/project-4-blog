@@ -53,6 +53,11 @@ button {
     text-decoration: none;
 }
 
+p a {
+    color: #c51616;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -392,12 +397,12 @@ a {
 
 /* New Post */
 
-#new-post {
+.new-post {
     width: 50%;
 }
 
 @media screen and (max-width: 768px) {
-    #new-post {
+    .new-post {
         width: 90%;
     }
 }
