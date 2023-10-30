@@ -390,6 +390,14 @@ a {
     background: #b8e0a8;
 }
 
-.form-group {
+/* New Post */
+
+#new-post {
     width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #new-post {
+        width: 90%;
+    }
 }
