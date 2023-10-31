@@ -18,6 +18,8 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -123,6 +125,10 @@ nav .menu a {
     color: var(--primary-color);
     font-weight: 700;
     margin-left: 24px;
+}
+
+nav .menu a.active {
+    border-bottom: 2px solid #c51616;
 }
 
 .mobile-menu {

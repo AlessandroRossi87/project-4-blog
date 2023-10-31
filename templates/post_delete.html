@@ -19,6 +19,17 @@
       Confirm
     </button>
   </form>
+  <br />
+  <form action="{% url 'post_detail' post.slug %}" method="get">
+    {% csrf_token %}
+    <button
+      type="submit"
+      class="btn btn-primary"
+      aria-label="Cancel deletion and go back to the Alert"
+    >
+      Cancel
+    </button>
+  </form>
 </div>
 
-{% endblock content %}
+{% endblock content %} "btn btn-primary"
