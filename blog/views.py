@@ -125,8 +125,13 @@ class EditPost(View):
         if request.user == post.author:
             form = NewPostForm(request.POST, instance=post)
             if form.is_valid():
-                form.save()
-                return redirect('post_detail', slug=slug)
+                edited_post = form.save(commit=False)
+                unique_id = uuid.uuid4().hex[:5]
+                edited_post.slug = f"{slugify(edited_post.title)}-{unique_id}"
+                edited_post.save()
+                return redirect('post_detail', slug=edited_post.slug)
+            else:
+                return render(request, 'new_post.html', {'form': form, 'post': post, 'editing': True})
         else:
             return redirect('post_detail', slug=slug)
 
