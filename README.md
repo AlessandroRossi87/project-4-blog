@@ -1,10 +1,18 @@
 # Schöneberg Alert
 
-Schöneberg Alert is a digital community pinboard for the neighborhood of Schöneberg, Berlin. It is common that such community pinboards are placed at the entrace of local supermarkets, where the local authorities and inhabitants alike may post announcements, ads or requests. I decided to create a digital version for it and givit the eyecatching name of "Schöneberg Alert" inspired by the name of sensionalist tabloids newspapers. Schöneberg residents are welcome to sign up and either post an "Alert" or comment on one. My idea is the digitazation of German society at large.
+Schöneberg Alert is a digital community pinboard for the neighborhood of Schöneberg, Berlin. It is common that such community pinboards are placed at the entrace of local supermarkets, where the local authorities and inhabitants alike may post announcements, ads or requests. I decided to create a digital version for it and give it the eyecatching name of "Schöneberg Alert" inspired by the name of sensionalist tabloid newspapers. Schöneberg residents are welcome to sign up and either post an "Alert" or comment on one. My idea is the digitazation of German society at large.
 
-## Agile Methodology
+XXX INSERT MOCKUP XXX
 
-I used the Github Projects to manage the process using an agile approach.
+## User-Experience-Design
+
+## Strategy
+
+### Site Goals
+
+The site is aimed at the local community of a particular neighborhood, in this case Schöneberg in Berlin. It is a way for people to keep up on local events or problems of their daily life in the neighborhood. The website should be as intuitive as possible, giving the user the feeling of being part of the community they reside in.
+
+I used the Github Projects to manage the process using an agile approach. I created 
 
 Kanban board
 

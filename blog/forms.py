@@ -15,7 +15,7 @@ class NewPostForm(forms.ModelForm):
         fields = ('title', 'featured_image', 'content', 'category')
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'featured_image': forms.ClearableFileInput(attrs={'class': 'form-control'}),
+            'featured_image': forms.FileInput(attrs={'class': 'form-control'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
             'category': forms.Select(attrs={'class': 'form-control'}),
         }
