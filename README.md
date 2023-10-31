@@ -12,11 +12,11 @@ XXX INSERT MOCKUP XXX
 
 The site is aimed at the local community of a particular neighborhood, in this case Schöneberg in Berlin. It is a way for people to keep up on local events or problems of their daily life in the neighborhood. The website should be as intuitive as possible, giving the user the feeling of being part of the community they reside in.
 
-I used the Github Projects to manage the process using an agile approach. I created 
+Originally the website would have been catered to two different kind of users: business accounts and private accounts. The admin would have had to approve the business accounts since they woudl have needed to proof that they owned a small business within the limits of Schöneberg. Due to time constrigements I decided to focus only on the private accounts.
 
-Kanban board
+I used the Github Projects to manage the process using an agile approach. I created user stories and assigned them to two categories: "Must have" and "Can have"
 
-User Stories
+XXX KANBAN BOARD XXX
 
 ## Features
 
