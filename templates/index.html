@@ -33,6 +33,12 @@
     </ul>
   </div>
 </div>
+<div class="no-category">
+  {% if not post_list %}
+  <h3>No Alerts in this category!</h3>
+  <a href="{% url 'home' %}" aria-label="Clear Filter">Clear Filter</a>
+  {% endif %}
+</div>
 <!-- New Blog Section-->
 <section id="blog" aria-label="Blog Posts">
   <div class="blog-container">
