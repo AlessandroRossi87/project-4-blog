@@ -426,3 +426,12 @@ a {
         width: 90%;
     }
 }
+
+/* Like Button */
+.like-button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+}
