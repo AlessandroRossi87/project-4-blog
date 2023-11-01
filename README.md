@@ -36,30 +36,45 @@ I used the Github Projects to manage the process using an agile approach. I crea
 
 I created a corporate identity for this website by using a red bell icon from FontAwesome nested between the two words that constitute the website's name. The same red bell can be found as the default image for the alerts.
 
+![Logo](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/logo.png)
+
+![Default Picture]()
 
 ### Navbar
 
 The navbar is fully responsive and for unauthenticated users it links to:
-  - Home Pag
-  - Sign Up Page
-  - Log In Page
+
+- Home Pag
+- Sign Up Page
+- Log In Page
+
+[Unauthenticated Navbar](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/unauthnav.png)
 
 For authenticated users it links to:
-  - Home Page
-  - Post an Alert page
-  - Sign Out Page
+
+- Home Page
+- Post an Alert page
+- Sign Out Page
+
+[Authenticated Navbar](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/authnav.png)
 
 ### Footer
 
 The footer is fully responsive and same as the navbar for unauthenticated users it liks to:
-  - Home Page
-  - Sign Up Page
-  - Log In Page
+
+- Home Page
+- Sign Up Page
+- Log In Page
+
+[Unauthenticated footer](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/unauthfooter.png)
 
 For authenticated users it liks to:
-  - Home Page
-  - Post an Alert page
-  - Sign Out Page
+
+- Home Page
+- Post an Alert page
+- Sign Out Page
+
+[Authenticated footer](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/authfooter.png)
 
 The footer also contains liks to social media websites, which open up in a new window
 
@@ -70,6 +85,8 @@ The Index Page extends the base and includes the following sections:
 **Hero section**
 
 The hero section features an Image from a street fair in Schöneberg which reflects the neighborhood's diversity, it also features an intro text explaining the goals of this website.
+
+[Hero section](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/hero.png)
 
 **Category filter**
 
@@ -85,11 +102,15 @@ Each Alert can be filtered by its category. There are 9 categories available for
 - Safety
 - Traffic & Transportation
 
+[Categories](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/categories.png)
+
 When the user clicks on a category only posts related to that category are shown. In order to reset the filter the user clicks on "clear" button
 
 **Alert section**
 
-This sections lists all the Alerts posted by users. It paginates authomatically if the section includes a number of posts divisible by 3.
+This sections lists all the Alerts posted by users. It shows the picture, either from the user or a default one, the title, the date and time of posting, the number of likes and comments, the author and the category. The user can click on the title to read the Alert in detail.
+
+[Alert section]()
 
 ### New Post Page
 
@@ -119,4 +140,4 @@ The page shows the Alert with its text and a comment field below.
 
 ## Credits
 
-## Acknowledgments 
+## Acknowledgments
