@@ -22,7 +22,7 @@ XXX KANBAN BOARD XXX
 
 ### Database Structure
 
-![Database structure]()
+![Database structure](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/database.png)
 
 ### Wireframes
 
