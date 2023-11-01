@@ -124,23 +124,33 @@ The page extends the base and it shows the Django form for posting a new Alert. 
 
 The page shows the Alert with its text on the left and the picture on the right on wide screens. The user can read the text and, if authenticated, they can like the alert or leave a comment. The comments need to be approved by the Admin in order to avoid hate speech.
 
+![Post Detail](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/postdetail.png)
+
 If the user is the author of the Alert two buttons will be visible to them in order to Edit or Delete the post
 
-![Post Detail](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/postdetail.png)
+![Edit Delete](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/editdeletebtns.png)
 
 ### Edit Alert
 
+The page enables the author of the Alert to modify their post. They can modify al fields in the post.
+
+![Edit Alert](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/edit.png)
+
 ### Delete Alert
+
+Defensive design has been applied to this website. If the author of an Alert desires to delete their Alert they are redirected to this page where they can confirm or cancel the deletion.
+
+![Delete Alert](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/delete.png)
 
 ### Register page
 
-The register page allows the user to sign up by creating a username and a password. The page includes a link to the Login Page in case the user has already an account.
+The page allows the user to sign up by creating a username and a password. The page includes a link to the Login Page in case the user has already an account.
 
-![Post Detail](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/postdetail.png)
+![Post Detail](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/register.png)
 
 ### Login page
 
-The Login Page allows the user to log in to their account in order to post, like or comment an Alert. The page includes a link to the Register Page in case the user does not have an account.
+The page allows the user to log in to their account in order to post, like or comment an Alert. The page includes a link to the Register Page in case the user does not have an account.
 
 ![Login Page](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/login.png)
 
@@ -161,8 +171,6 @@ When the user clicks on "Logout" they are redirected to the Logout page where th
 ## Deployment
 
 ## Run Locally
-
-## Database schema
 
 ## Credits
 
