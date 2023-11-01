@@ -126,6 +126,8 @@ The page shows the Alert with its text and a comment field below.
 
 ### Log Out Page
 
+### Custom Error Pages
+
 ## Testing
 
 ## Validators
