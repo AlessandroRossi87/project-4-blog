@@ -5,40 +5,33 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock head_title %}
 <!--Stop-->
 {% block content %}
-<div class="container" id="login" aria-label="Sign in section">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <h1>{% trans "Sign In" %}</h1>
-
-      <p>
-        {% blocktrans %} Welcome back to Schöneberg Alert! To leave a comment or
-        like an Alert, please log in. If you have not created an account yet,
-        then <a href="{{ signup_url }}">register</a> first.
-        <!--Stop-->
-        {% endblocktrans %}
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <form
-        class="login"
-        method="POST"
-        action="{% url 'account_login' %}"
-        aria-label="Sign in Form"
-      >
-        {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
-        <input
-          type="hidden"
-          name="{{ redirect_field_name }}"
-          value="{{ redirect_field_value }}"
-        />
-        {% endif %}
-        <button class="btn-primary" type="submit" aria-label="Sign in">
-          {% trans "Sign In" %}
-        </button>
-      </form>
-    </div>
-  </div>
+<div class="center-content" style="background: #b8e0a8">
+  <h1>{% trans "Login" %}</h1>
+  <p>
+    {% blocktrans %} Welcome back to Schöneberg Alert! To leave a comment or
+    like an Alert, please log in.
+    <br />
+    If you have not created an account yet, then
+    <a href="{{ signup_url }}">register</a> first.
+    <!--Stop-->
+    {% endblocktrans %}
+  </p>
+  <form
+    class="login"
+    method="POST"
+    action="{% url 'account_login' %}"
+    aria-label="Sign in Form"
+  >
+    {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
+    <input
+      type="hidden"
+      name="{{ redirect_field_name }}"
+      value="{{ redirect_field_value }}"
+    />
+    {% endif %}
+    <button class="btn-primary" type="submit" aria-label="Sign in">
+      {% trans "Log In" %}
+    </button>
+  </form>
 </div>
 {% endblock %}

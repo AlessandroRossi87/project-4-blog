@@ -1,4 +1,6 @@
 import uuid
+import cloudinary.uploader
+from cloudinary.uploader import upload
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
@@ -125,6 +127,12 @@ class EditPost(View):
                 edited_post = form.save(commit=False)
                 unique_id = uuid.uuid4().hex[:5]
                 edited_post.slug = f"{slugify(edited_post.title)}-{unique_id}"
+
+                if 'featured_image' in request.FILES:
+                    edited_image = request.FILES['featured_image']
+                    uploaded_image = upload(edited_image)
+                    edited_post.featured_image = uploaded_image['url']
+
                 edited_post.save()
                 return redirect('post_detail', slug=edited_post.slug)
             else:
