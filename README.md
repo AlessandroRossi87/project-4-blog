@@ -58,6 +58,8 @@ For authenticated users it links to:
 
 ![Authenticated Navbar](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/authnav.png)
 
+The navbar menu transforms into an hambuger menu in narrow screens.
+
 ### Footer
 
 The footer is fully responsive and same as the navbar for unauthenticated users it liks to:
@@ -112,19 +114,41 @@ This sections lists all the Alerts posted by users. It shows the picture, either
 
 ![Alert section](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/postlist.png)
 
-### New Post Page
+### Post an Alert Page
 
 The page extends the base and it shows the Django form for posting a new Alert. The template is also used for editing the posts. For new Alerts the header reads "Post an Alert" whereas for editing it reads "Edit an Alert". The submit button a the end reads "Submit" for new Alerts or "Update" for editing Alerts.
 
+![Post an Alert](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/newalert.png)
+
 ### Post Detail Page
 
-The page shows the Alert with its text and a comment field below.
+The page shows the Alert with its text on the left and the picture on the right on wide screens. The user can read the text and, if authenticated, they can like the alert or leave a comment. The comments need to be approved by the Admin in order to avoid hate speech.
 
-### Sign Up page
+If the user is the author of the Alert two buttons will be visible to them in order to Edit or Delete the post
 
-### Log In page
+![Post Detail](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/postdetail.png)
 
-### Log Out Page
+### Edit Alert
+
+### Delete Alert
+
+### Register page
+
+The register page allows the user to sign up by creating a username and a password. The page includes a link to the Login Page in case the user has already an account.
+
+![Post Detail](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/postdetail.png)
+
+### Login page
+
+The Login Page allows the user to log in to their account in order to post, like or comment an Alert. The page includes a link to the Register Page in case the user does not have an account.
+
+![Login Page](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/login.png)
+
+### Logout Page
+
+When the user clicks on "Logout" they are redirected to the Logout page where they are asked to confirm if they want to log out:
+
+![Logout Page](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/logout.png)
 
 ### Custom Error Pages
 
