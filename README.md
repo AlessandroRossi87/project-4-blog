@@ -16,7 +16,7 @@ Originally the website would have been catered to two different kind of users: b
 
 I used the Github Projects to manage the process using an agile approach. I created user stories and assigned them to two categories: "Must have" and "Can have"
 
-![Kanban Board](XXX)
+![Kanban Board](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/kanban.png)
 
 ## Features
 
@@ -32,12 +32,15 @@ I used the Github Projects to manage the process using an agile approach. I crea
 
 ![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/alertwf.png)
 
-###
+### Logo
+
+I created a corporate identity for this website by using a red bell icon from FontAwesome nested between the two words that constitute the website's name. The same red bell can be found as the default image for the alerts.
+
 
 ### Navbar
 
 The navbar is fully responsive and for unauthenticated users it links to:
-  - Home Page
+  - Home Pag
   - Sign Up Page
   - Log In Page
 
