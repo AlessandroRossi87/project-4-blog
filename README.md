@@ -16,7 +16,7 @@ Originally the website would have been catered to two different kind of users: b
 
 I used the Github Projects to manage the process using an agile approach. I created user stories and assigned them to two categories: "Must have" and "Can have"
 
-XXX KANBAN BOARD XXX
+![Kanban Board](XXX)
 
 ## Features
 
@@ -25,6 +25,12 @@ XXX KANBAN BOARD XXX
 ![Database structure](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/database.png)
 
 ### Wireframes
+
+![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/indexwf.png)
+
+![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/signloginwf.png)
+
+![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/alertwf.png)
 
 ###
 
@@ -66,15 +72,15 @@ The hero section features an Image from a street fair in Schöneberg which refle
 
 Each Alert can be filtered by its category. There are 9 categories available for the user to choose:
 
-- Category
-- Category
-- Category
-- Category
-- Category
-- Category
-- Category
-- Category
-- Category
+- Business Recommendations
+- Environment
+- Events
+- Health & Wellness
+- Housing
+- Lost & Found
+- News & Updates
+- Safety
+- Traffic & Transportation
 
 When the user clicks on a category only posts related to that category are shown. In order to reset the filter the user clicks on "clear" button
 
