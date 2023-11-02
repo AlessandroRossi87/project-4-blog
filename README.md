@@ -4,6 +4,8 @@ Schöneberg Alert is a digital community pinboard for the neighborhood of Schön
 
 ![Responsive mockup]()
 
+LINK TO DEPLOYED WEBSITE
+
 ## User-Experience-Design
 
 ## Strategy
@@ -14,17 +16,23 @@ The site is aimed at the local community of a particular neighborhood, in this c
 
 Originally the website would have been catered to two different kind of users: business accounts and private accounts. The admin would have had to approve the business accounts since they woudl have needed to proof that they owned a small business within the limits of Schöneberg. Due to time constrigements I decided to focus only on the private accounts.
 
+![Original Site Logic](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/sitelogic.png)
+
 I used the Github Projects to manage the process using an agile approach. I created user stories and assigned them to two categories: "Must have" and "Can have"
 
 ![Kanban Board](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/kanban.png)
 
 ## Features
 
-### Database Structure
+<details>
+<summary><strong>Database Structure</strong></summary>
 
 ![Database structure](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/database.png)
 
-### Wireframes
+</details>
+
+<details>
+<summary><strong>Wireframes</strong></summary>
 
 ![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/indexwf.png)
 
@@ -32,13 +40,18 @@ I used the Github Projects to manage the process using an agile approach. I crea
 
 ![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/alertwf.png)
 
-### Logo
+</details>
+
+<details>
+<summary><strong>Logo</strong></summary>
 
 I created a corporate identity for this website by using a red bell icon from FontAwesome nested between the two words that constitute the website's name. The same red bell can be found as the default image for the alerts.
 
 ![Logo](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/logo.png)
 
 ![Default Picture](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/default.png)
+
+<details>
 
 ### Navbar
 
