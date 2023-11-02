@@ -51,9 +51,12 @@ I created a corporate identity for this website by using a red bell icon from Fo
 
 ![Default Picture](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/default.png)
 
-<details>
+</details>
 
-### Navbar
+### Features
+
+<details>
+<summary><strong>Navbar</strong></summary>
 
 The navbar is fully responsive and for unauthenticated users it links to:
 
@@ -73,7 +76,12 @@ For authenticated users it links to:
 
 The navbar menu transforms into an hambuger menu in narrow screens.
 
-### Footer
+![Hamburger Navbar](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/hamburger.png)
+
+</details>
+
+<details>
+<summary><strong>Footer</strong></summary>
 
 The footer is fully responsive and same as the navbar for unauthenticated users it liks to:
 
@@ -93,7 +101,10 @@ For authenticated users it liks to:
 
 The footer also contains liks to social media websites, which open up in a new window
 
-### Index Page
+</details>
+
+<details>
+<summary><strong>Index Page</strong></summary>
 
 The Index Page extends the base and includes the following sections:
 
@@ -127,13 +138,19 @@ This sections lists all the Alerts posted by users. It shows the picture, either
 
 ![Alert section](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/postlist.png)
 
-### Post an Alert Page
+</details>
+
+<details>
+<summary><strong>Post an Alert Page</strong></summary>
 
 The page extends the base and it shows the Django form for posting a new Alert. The template is also used for editing the posts. For new Alerts the header reads "Post an Alert" whereas for editing it reads "Edit an Alert". The submit button a the end reads "Submit" for new Alerts or "Update" for editing Alerts.
 
 ![Post an Alert](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/newalert.png)
 
-### Post Detail Page
+</details>
+
+<details>
+<summary><strong>Alert Detail Page</strong></summary>
 
 The page shows the Alert with its text on the left and the picture on the right on wide screens. The user can read the text and, if authenticated, they can like the alert or leave a comment. The comments need to be approved by the Admin in order to avoid hate speech.
 
@@ -143,37 +160,59 @@ If the user is the author of the Alert two buttons will be visible to them in or
 
 ![Edit Delete](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/editdeletebtns.png)
 
-### Edit Alert
+</details>
+
+<details>
+<summary><strong>Edit Alert Page</strong></summary>
 
 The page enables the author of the Alert to modify their post. They can modify al fields in the post.
 
 ![Edit Alert](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/edit.png)
 
-### Delete Alert
+</details>
+
+<details>
+<summary><strong>Delete Alert Page</strong></summary>
 
 Defensive design has been applied to this website. If the author of an Alert desires to delete their Alert they are redirected to this page where they can confirm or cancel the deletion.
 
 ![Delete Alert](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/delete.png)
 
-### Register page
+</details>
+
+<details>
+<summary><strong>Register Page</strong></summary>
 
 The page allows the user to sign up by creating a username and a password. The page includes a link to the Login Page in case the user has already an account.
 
 ![Post Detail](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/register.png)
 
-### Login page
+</details>
+
+<details>
+<summary><strong>Login Page</strong></summary>
 
 The page allows the user to log in to their account in order to post, like or comment an Alert. The page includes a link to the Register Page in case the user does not have an account.
 
 ![Login Page](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/login.png)
 
-### Logout Page
+</details>
+
+<details>
+<summary><strong>Logout Page</strong></summary>
 
 When the user clicks on "Logout" they are redirected to the Logout page where they are asked to confirm if they want to log out:
 
 ![Logout Page](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/logout.png)
 
-### Custom Error Pages
+</details>
+
+<details>
+<summary><strong>Custom Error Pages</strong></summary>
+
+</details>
+
+### Future Features
 
 ## Testing
 
