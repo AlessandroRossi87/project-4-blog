@@ -39,7 +39,7 @@ ALLOWED_HOSTS = ['project4-pinboard.herokuapp.com',
 
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.auth',ss
+    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
