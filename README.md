@@ -16,11 +16,17 @@ The site is aimed at the local community of a particular neighborhood, in this c
 
 Originally the website would have been catered to two different kind of users: business accounts and private accounts. The admin would have had to approve the business accounts since they woudl have needed to proof that they owned a small business within the limits of Schöneberg. Due to time constrigements I decided to focus only on the private accounts.
 
+<details>
+<summary><strong>Original Site Logic</strong></summary>
 ![Original Site Logic](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/sitelogic.png)
+</details>
 
 I used the Github Projects to manage the process using an agile approach. I created user stories and assigned them to two categories: "Must have" and "Can have"
 
+<details>
+<summary><strong>Kanban Board</strong></summary>
 ![Kanban Board](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/kanban.png)
+</details>
 
 ## Features
 
@@ -53,7 +59,7 @@ I created a corporate identity for this website by using a red bell icon from Fo
 
 </details>
 
-### Features
+### Existing Features
 
 <details>
 <summary><strong>Navbar</strong></summary>
@@ -209,6 +215,8 @@ When the user clicks on "Logout" they are redirected to the Logout page where th
 
 <details>
 <summary><strong>Custom Error Pages</strong></summary>
+
+Custom Error Pages have been created for error 400, 403, 404 and 500.
 
 </details>
 
