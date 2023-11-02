@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ['project4-pinboard.herokuapp.com',
-                 '8000-alessandrorossi87-projec-6vou1pnqs2.us2.codeanyapp.com', '8003-alessandrorossi87-projec-6vou1pnqs2.us2.codeanyapp.com', 'project4-pinboard-1c32e796b2e1.herokuapp.com',]
+                 '8000-alessandrorossi87-projec-6zla04l4ii.us2.codeanyapp.com', 'project4-pinboard-1c32e796b2e1.herokuapp.com',]
 
 
 # Application definition

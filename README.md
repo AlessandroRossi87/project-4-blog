@@ -2,11 +2,9 @@
 
 Schöneberg Alert is a digital community pinboard for the neighborhood of Schöneberg, Berlin. It is common that such community pinboards are placed at the entrace of local supermarkets, where the local authorities and inhabitants alike may post announcements, ads or requests. I decided to create a digital version for it and give it the eyecatching name of "Schöneberg Alert" inspired by the name of sensionalist tabloid newspapers. Schöneberg residents are welcome to sign up and either post an "Alert" or comment on one. My idea is the digitazation of German society at large.
 
-TEST PUSH
-
 ![Responsive mockup]()
 
-LINK TO DEPLOYED WEBSITE
+[Link to deployed website](https://project4-pinboard-1c32e796b2e1.herokuapp.com/)
 
 ## User-Experience-Design
 
@@ -20,14 +18,18 @@ Originally the website would have been catered to two different kind of users: b
 
 <details>
 <summary><strong>Original Site Logic</strong></summary>
+
 ![Original Site Logic](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/sitelogic.png)
+
 </details>
 
 I used the Github Projects to manage the process using an agile approach. I created user stories and assigned them to two categories: "Must have" and "Can have"
 
 <details>
 <summary><strong>Kanban Board</strong></summary>
+
 ![Kanban Board](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/kanban.png)
+
 </details>
 
 ## Features
