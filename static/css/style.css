@@ -304,7 +304,7 @@ a {
     color: var(--primary-color);
 }
 
-/* Account pages */
+/* Account and Post templates */
 
 .center-content {
     background: #b8e0a8;
@@ -330,10 +330,28 @@ a {
     padding-right: 10px;
 }
 
-/* New Post */
-
 .new-post {
     width: 50%;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container>div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon-container i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.icon-container span {
+    font-size: 18px;
 }
 
 /* Like Button */
