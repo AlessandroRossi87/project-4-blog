@@ -232,7 +232,7 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 
 ### Future Features
 
-- The possibility for users to create a private or business account
+- Possibility for users to create a private or business account
 
 - Each user should be able to have a profile
 
@@ -242,9 +242,13 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 
 - Possibility to geo-locate an Alert with Google Maps embedding.
 
+- Possibility for users to edit or delete a comment
+
+- Possibility to unlike an Alert after having liked it
+
 ## Testing
 
-| Registration          | Results                                           |
+| Register Page         | Results                                           |
 | --------------------- | ------------------------------------------------- |
 | Username required     | Text field left empty gives error message         |
 | Password required     | Text field left empty gives error message         |
@@ -269,6 +273,26 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 | Delete Alert Page        | It shows the user a button to confirm deletion and one to cancel deletion               |
 | Delete Alert button      | It deletes the Alert and redirects the user to the Home Page                            |
 | Cancel Delete button     | It redirects the user back to the Alert Detail Page                                     |
+| Alert Detail Page        | If user clicks on Alert Title it redirects to the Alert Detail Page                     |
+
+| Comment & Like   | Results                                                                 |
+| ---------------- | ----------------------------------------------------------------------- |
+| Read comments    | All users are able to read comments in the Alert Detail Page            |
+| Post a comment   | Only logged in users are able to post a comment                         |
+| Submit button    | A message informs them that the comment needs Admin approval            |
+| Approve comments | Only Superuser is able to approve or reject comments from Admin Site    |
+| Like button      | Only logged in users are able to like an Alert in the Alert Detail page |
+
+| Nagivation links | Results                                                                                                                                                         |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Logo             | User clicks on the Logo and is redirected to Home Page                                                                                                          |
+| Home             | User clicks on "Home" and is redirected to Home Page                                                                                                            |
+| Login            | A logged out user is redirected to Login page                                                                                                                   |
+| Logout           | A logged in user is redirected to Logout page                                                                                                                   |
+| Register         | A logged out user is redirected to Register Page                                                                                                                |
+| Post an Alert    | A logged in user is redirected to Post an Alert Page                                                                                                            |
+| Social media     | Social media icons open up in a new tab                                                                                                                         |
+| Category filter  | User clicks on a category and only the relative Alerts are shown. If no Alert for that category a message informs the user and invites them to clear the filter |
 
 ### Accessibility
 
