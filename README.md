@@ -314,6 +314,8 @@ Originally the feature to edit the featured image for an Alert was not working. 
 
 The Index Page, Alert Detail Page, Register Page, Post an Alert Page were run through the [w3 HTML Validator](https://validator.w3.org/). There were some errors for trailing slash, misuse of Aria Labels, stray tags and some p elements as child of ul elements and missing alt attributes for images. I was able to correct most of the errors beside the trailing slashes because they happen authomatically in the IDE environment I am using (Codeanywhere) and the alt attributes for the images uploaded through Cloudinary.
 
+Python PEP8 style convention was checked with the [ExtendsClass Python syntax checker](https://extendsclass.com/python-tester.html) and it returned a few syntax error due to the Python version compatibility. I amended the lines of codes and all custom made Python files (views.py urls.py models.py forms.py admin.py) passed without errors.
+
 ### Lighthouse Report
 
 ## Deployment

@@ -46,10 +46,10 @@
         {% if "placeholder" in post.featured_image.url %}
         <img
           src="https://res.cloudinary.com/dg6tnws5o/image/upload/v1698399023/default2_u9ifqc.png"
-          alt="Alert Image"
+          alt="PlaceholderImage"
         />
         {% else %}
-        <img src="{{ post.featured_image.url }}" />
+        <img src="{{ post.featured_image.url }}" alt="Featured Image" />
         {% endif %}
       </div>
       <div class="blog-text">
