@@ -240,11 +240,26 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 
 - Private user should be able to log in with other social media accounts, like Google
 
+- Possibility to geo-locate an Alert with Google Maps embedding.
+
 ## Testing
+
+| Registration          | Expected Results                                  |
+| --------------------- | ------------------------------------------------- |
+| Username required     | Text field left empty gives error message         |
+| Password required     | Text field left empty gives error message         |
+| Password confirmation | If password does not match it gives error message |
+| Register button       | It validates registration and logs in the user    |
+
+### Accessibility
+
+### Bugs
 
 ## Validators
 
 ### HTML & CSS
+
+### Lighthouse Report
 
 ## Deployment
 
