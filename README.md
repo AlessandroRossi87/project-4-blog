@@ -303,7 +303,11 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 
 I used [Wave Accessibility](https://wave.webaim.org/) to check for accessibility testing. I have focused on correcting the color contrasts to meet the minimum ratio. Also I have made sure to provide Aria Labels throughout the website to ensure assistive technology such as screen readers. All pictures have an alternative text describing them.
 
-### Bugs
+### Solved bugs
+
+Originally the feature to edit the featured image for an Alert was not working. I modified the widget for the featured image in the NewPostForm to ClearableFileInput and the bug was solved.
+
+![Edit Featured Image]()
 
 ## Validators
 
