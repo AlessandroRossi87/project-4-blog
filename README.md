@@ -318,9 +318,21 @@ Python PEP8 style convention was checked with the [ExtendsClass Python syntax ch
 
 ### Lighthouse Report
 
+The Lighthouse Report showed first some area of improvements for Accessibility and CEO. I added a few more Aria-labels to images and added meta description and was able to have all the values above 90.
+
+![Lighthouse Report](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/lighthouse.png)
+
 ## Deployment
 
-## Run Locally
+The website was deployed to Heroku by following these steps:
+
+- I created an account in Heroku
+- Once logged in, I created a new app
+- Inside the app I went to the settings tab to reveal configuration vars
+- I added the following configuration vars: CLOUDINARY_URL, DATABASE_URL, PORT, SECRET_KEY
+- I went to the deploy tab and connected the GitHub repository
+- I went to Manual deploy and chose Main branch
+- I clicked on deploy
 
 ## Credits
 

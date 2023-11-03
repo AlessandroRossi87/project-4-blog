@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %} {% load crispy_forms_tags %}
-
+<!-- Alert Detail -->
 <div class="masthead">
   <div class="container">
     <div class="row g-0">
@@ -42,6 +42,7 @@
     </div>
   </div>
 </div>
+<!-- Likes and Comments counter-->
 <div class="icon-container">
   <div>
     {% if user.is_authenticated %}
@@ -77,6 +78,7 @@
 <div class="row">
   <div class="col"></div>
 </div>
+<!-- Comments Field -->
 <div class="row" id="comments-box">
   <div class="col-md-8 card mb-4 mt-3">
     <h3>Comments:</h3>
