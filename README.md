@@ -244,12 +244,31 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 
 ## Testing
 
-| Registration          | Expected Results                                  |
+| Registration          | Results                                           |
 | --------------------- | ------------------------------------------------- |
 | Username required     | Text field left empty gives error message         |
 | Password required     | Text field left empty gives error message         |
 | Password confirmation | If password does not match it gives error message |
 | Register button       | It validates registration and logs in the user    |
+
+| Login & Logout | Results                                                                                                                           |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Login          | Registered user is able to log in with username and password. If user tries to log in without credentials, error message is shown |
+| Logout         | Logout page visible only to logged in users. It asks for confirmation to log out                                                  |
+| Logout button  | It logs out the user and redirects to Home Page where a message confirms successfull logout                                       |
+
+| Post, Edit, Delete Alert | Results                                                                                 |
+| ------------------------ | --------------------------------------------------------------------------------------- |
+| Title required           | Text field left empty gives error message                                               |
+| Image not required       | If left empty a default image is shown                                                  |
+| Content required         | Text left empty gives error message                                                     |
+| Category required        | If no category is selectet it gives error message                                       |
+| Edit button              | Only author of Alert is shown this button. It redirects the user to the Edit Alert page |
+| Edit fields              | User is able to modify all fields in Alert and change the image                         |
+| Delete button            | Only author of Alert is shown this button. It directs the user to the Delete Alert page |
+| Delete Alert Page        | It shows the user a button to confirm deletion and one to cancel deletion               |
+| Delete Alert button      | It deletes the Alert and redirects the user to the Home Page                            |
+| Cancel Delete button     | It redirects the user back to the Alert Detail Page                                     |
 
 ### Accessibility
 
