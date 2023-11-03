@@ -307,9 +307,11 @@ I used [Wave Accessibility](https://wave.webaim.org/) to check for accessibility
 
 Originally the feature to edit the featured image for an Alert was not working. I modified the widget for the featured image in the NewPostForm to ClearableFileInput and the bug was solved.
 
-![Edit Featured Image]()
+![Edit Featured Image](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/imgupdatebug.png)
 
 ## Validators
+
+The Index Page, Alert Detail Page, Register Page, Post an Alert Page were run through the [w3 HTML Validator](https://validator.w3.org/). There were some errors for trailing slash, misuse of Aria Labels, stray tags and some p elements as child of ul elements and missing alt attributes for images.
 
 ### HTML & CSS
 
