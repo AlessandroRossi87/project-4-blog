@@ -336,4 +336,16 @@ The website was deployed to Heroku by following these steps:
 
 ## Credits
 
+- This website was built by following the walkthrough project Django Blog by Code Institute.
+- Styling with CSS was inspired by this tutorial on [Youtube](https://www.youtube.com/watch?v=INIW731cxIo&t=1510s)
+- The images for the Alerts are my private property.
+- The hero image comes from [GetYourGuide](https://cdn.getyourguide.com/img/tour/95204b7993d5f8aa.jpeg/145.jpg)
+- Code for Slugify was taken from [FullStackPythn.com](https://www.fullstackpython.com/django-utils-text-slugify-examples.html)
+- Code for custom 404 page was taken from [Stackoverflow](https://stackoverflow.com/questions/17662928/django-creating-a-custom-500-404-error-page)
+- Code for defensive design for deliting an Alert was taken from [Stackoverflow](https://stackoverflow.com/questions/31843145/deleteview-with-confirmation-template-and-post-method)
+- Styling the django form was ispired by this tutorial on [Youtube](https://www.youtube.com/watch?v=6-XXvUENY_8)
+- Code for editing the featured image was taken from [Programtalk.com](https://programtalk.com/python-examples/django.forms.ClearableFileInput/?utm_content=cmp-true)
+
 ## Acknowledgments
+
+I would like to thank my class coordinator Kay, former alumni Armando Urquiola Cabrera and my newly appointed mentor Gareth McGirr for their support and help through this project.
