@@ -4,6 +4,7 @@ from django.utils.text import slugify
 from cloudinary.models import CloudinaryField
 
 
+# Category model for filtering Alerts
 class Category(models.Model):
     name = models.CharField(max_length=255)
 
@@ -15,6 +16,7 @@ class Category(models.Model):
         return self.name
 
 
+# Post model for each Alert
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -48,6 +50,7 @@ class Post(models.Model):
         super(Post, self).save(*args, **kwargs)
 
 
+# Comment model for commenting Alerts
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="comments")
