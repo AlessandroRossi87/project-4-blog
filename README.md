@@ -2,7 +2,7 @@
 
 Schöneberg Alert is a digital community pinboard for the neighborhood of Schöneberg, Berlin. It is common that such community pinboards are placed at the entrace of local supermarkets, where the local authorities and inhabitants alike may post announcements, ads or requests. I decided to create a digital version for it and give it the eyecatching name of "Schöneberg Alert" inspired by the name of sensionalist tabloid newspapers. Schöneberg residents are welcome to sign up and either post an "Alert" or comment on one. My idea is the digitazation of German society at large.
 
-![Responsive mockup]()
+![Responsive mockup](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/mockup.png)
 
 [Link to deployed website](https://project4-pinboard-1c32e796b2e1.herokuapp.com/)
 
@@ -70,7 +70,7 @@ I created a corporate identity for this website by using a red bell icon from Fo
 
 The navbar is fully responsive and for unauthenticated users it links to:
 
-- Home Pag
+- Home Page
 - Sign Up Page
 - Log In Page
 
@@ -140,7 +140,11 @@ Each Alert can be filtered by its category. There are 9 categories available for
 
 ![Categories](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/categories.png)
 
-When the user clicks on a category only posts related to that category are shown. In order to reset the filter the user clicks on "clear" button
+When the user clicks on a category only posts related to that category are shown. In order to reset the filter the user clicks on "clear" button.
+
+![No Alerts](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/noalerts.png)
+
+If no Alerts are available for a certain category a message is displayed and an extra button to clear the categories and display all alerts.
 
 **Alert section**
 
@@ -222,9 +226,19 @@ When the user clicks on "Logout" they are redirected to the Logout page where th
 
 Custom Error Pages have been created for error 400, 403, 404 and 500.
 
+![404 error](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/404.png)
+
 </details>
 
 ### Future Features
+
+- The possibility for users to create a private or business account
+
+- Each user should be able to have a profile
+
+- Each user should be able to message other users
+
+- Private user should be able to log in with other social media accounts, like Google
 
 ## Testing
 
