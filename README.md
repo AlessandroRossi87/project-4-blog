@@ -248,6 +248,9 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 
 ## Testing
 
+<details>
+<summary><strong>Manual Testing</strong></summary>
+
 | Register Page         | Results                                           |
 | --------------------- | ------------------------------------------------- |
 | Username required     | Text field left empty gives error message         |
@@ -294,7 +297,11 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 | Social media     | Social media icons open up in a new tab                                                                                                                         |
 | Category filter  | User clicks on a category and only the relative Alerts are shown. If no Alert for that category a message informs the user and invites them to clear the filter |
 
+</details>
+
 ### Accessibility
+
+I used [Wave Accessibility](https://wave.webaim.org/) to check for accessibility testing. I have focused on correcting the color contrasts to meet the minimum ratio. Also I have made sure to provide Aria Labels throughout the website to ensure assistive technology such as screen readers. All pictures have an alternative text describing them.
 
 ### Bugs
 
