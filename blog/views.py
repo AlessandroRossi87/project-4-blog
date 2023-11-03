@@ -100,7 +100,7 @@ class NewPost(View):
             post = form.save(commit=False)
             post.author = request.user
             unique_id = uuid.uuid4().hex[:5]
-            post.slug = f"{slugify(post.title)}-{unique_id}"
+            post.slug = "{}-{}".format(slugify(post.title), unique_id)
             post.save()
 
             return HttpResponseRedirect(reverse('post_detail', args=[post.slug]))
@@ -126,7 +126,8 @@ class EditPost(View):
             if form.is_valid():
                 edited_post = form.save(commit=False)
                 unique_id = uuid.uuid4().hex[:5]
-                edited_post.slug = f"{slugify(edited_post.title)}-{unique_id}"
+                edited_post.slug = "{}-{}".format(
+                    slugify(post.title), unique_id)
 
                 if 'featured_image' in request.FILES:
                     edited_image = request.FILES['featured_image']

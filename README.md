@@ -296,6 +296,7 @@ Custom Error Pages have been created for error 400, 403, 404 and 500.
 | Post an Alert    | A logged in user is redirected to Post an Alert Page                                                                                                            |
 | Social media     | Social media icons open up in a new tab                                                                                                                         |
 | Category filter  | User clicks on a category and only the relative Alerts are shown. If no Alert for that category a message informs the user and invites them to clear the filter |
+| Mobile menu      | On narrow screens the user clicks on the hamburger icon to open the navigation bar                                                                              |
 
 </details>
 
@@ -311,9 +312,7 @@ Originally the feature to edit the featured image for an Alert was not working. 
 
 ## Validators
 
-The Index Page, Alert Detail Page, Register Page, Post an Alert Page were run through the [w3 HTML Validator](https://validator.w3.org/). There were some errors for trailing slash, misuse of Aria Labels, stray tags and some p elements as child of ul elements and missing alt attributes for images.
-
-### HTML & CSS
+The Index Page, Alert Detail Page, Register Page, Post an Alert Page were run through the [w3 HTML Validator](https://validator.w3.org/). There were some errors for trailing slash, misuse of Aria Labels, stray tags and some p elements as child of ul elements and missing alt attributes for images. I was able to correct most of the errors beside the trailing slashes because they happen authomatically in the IDE environment I am using (Codeanywhere) and the alt attributes for the images uploaded through Cloudinary.
 
 ### Lighthouse Report
 
