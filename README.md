@@ -75,12 +75,24 @@ I used the Github Projects to manage the process using an agile approach. I crea
 
 </details>
 
+## Technologies
+
+- HTML has been used for the structure of the website
+- Bootstrap has been used for styling the website
+- CSS has been used for customizing style
+- JavaScript has been user the internal messages and the hamburger menu on narrow screens
+- Python has been used within the Django Framework
+- Codeanywhere has been used as IDE fror development of the website
+- GitHub repository has been used for hosting the code
+- Font Awesome has been used for the bell icon, aka the logo
+- Favicon.io has been used for the favicon
+
 ## Features
 
 <details>
 <summary><strong>Database Structure</strong></summary>
 
-CRUD functionality has been applied through the DB for the Alert. e
+CRUD functionality has been applied through the database for authenticated users. A user can post an Alert, read it, edit it and delete it.
 
 ![Database structure](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/database.png)
 
