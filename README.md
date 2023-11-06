@@ -51,8 +51,10 @@ A skeleton structure has been created with help of Wireframes
 
 The surface provides soft colors in different shades of grey, white, light blue, light green and red. The colors of text has been checked for contrast. Buttons have been colored either blue or red for better recognizton. The simple layout is thought for older users who might not be accostumed to new technologies.
 
-![Color Scheme]()
-   
+The fonts chosen, Lato and Roboto, give a familiar yet institutional flair to the website.
+
+![Color Scheme](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/colors.png)
+
 <details>
 <summary><strong>Original Site Logic</strong></summary>
 
@@ -60,7 +62,11 @@ The surface provides soft colors in different shades of grey, white, light blue,
 
 </details>
 
-I used the Github Projects to manage the process using an agile approach. I created user stories and assigned them to two categories: "Must have" and "Can have"
+## Agile methodology
+
+I used the Github Projects to manage the process using an agile approach. I created user stories and assigned them to two categories: "Must have" and "Can have".
+
+[User Stories](https://github.com/users/AlessandroRossi87/projects/4)
 
 <details>
 <summary><strong>Kanban Board</strong></summary>
@@ -73,6 +79,8 @@ I used the Github Projects to manage the process using an agile approach. I crea
 
 <details>
 <summary><strong>Database Structure</strong></summary>
+
+CRUD functionality has been applied through the DB for the Alert. e
 
 ![Database structure](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/database.png)
 
