@@ -121,7 +121,8 @@ class NewPost(View):
             post.save()
 
             # Redirects the user to the Alert Detail page
-            return HttpResponseRedirect(reverse('post_detail', args=[post.slug]))
+            return HttpResponseRedirect(reverse(
+                'post_detail', args=[post.slug]))
 
         # Renders the new Alert page if form is not valid
         return render(request, 'new_post.html', {'form': form})
@@ -136,7 +137,8 @@ class EditPost(View):
         # Authorizes author to edit the Alert
         if request.user == post.author:
             form = NewPostForm(instance=post)
-            return render(request, 'new_post.html', {'form': form, 'post': post, 'editing': True})
+            return render(request, 'new_post.html', {
+                'form': form, 'post': post, 'editing': True})
         else:
             return redirect('post_detail', slug=slug)
 
@@ -161,7 +163,8 @@ class EditPost(View):
                 edited_post.save()
                 return redirect('post_detail', slug=edited_post.slug)
             else:
-                return render(request, 'new_post.html', {'form': form, 'post': post, 'editing': True})
+                return render(request, 'new_post.html', {
+                    'form': form, 'post': post, 'editing': True})
         else:
             return redirect('post_detail', slug=slug)
 
