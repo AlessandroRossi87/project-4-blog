@@ -16,6 +16,43 @@ The site is aimed at the local community of a particular neighborhood, in this c
 
 Originally the website would have been catered to two different kind of users: business accounts and private accounts. The admin would have had to approve the business accounts since they woudl have needed to proof that they owned a small business within the limits of Schöneberg. Due to time constrigements I decided to focus only on the private accounts.
 
+### Design
+
+I used the five planes of User Experience to plan the development of this project:
+
+**Strategy**
+
+The strategy for this project is to create a digital platform where people living in the same community can share important information, administrative notices, complaints etc. on an intuitive platform. I have often expressed the wish of being more aware of what is going on in my neighborhood, and Schöneberg Alert is the answer to my wishes.
+
+**Scope**
+
+The scope has been set to enabling the users to post different "Alerts" and the possibility to comment on each other's so that they can stay connected with their neighbors.
+
+**Structure**
+
+The structure of the website is simple and intuitive, there should be a list of posts, or Alerts, and the possibility to see more of one particular post.
+
+**Skeleton**
+
+A skeleton structure has been created with help of Wireframes
+
+<details>
+<summary><strong>Wireframes</strong></summary>
+
+![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/indexwf.png)
+
+![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/signloginwf.png)
+
+![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/alertwf.png)
+
+</details>
+
+**Surface**
+
+The surface provides soft colors in different shades of grey, white, light blue, light green and red. The colors of text has been checked for contrast. Buttons have been colored either blue or red for better recognizton. The simple layout is thought for older users who might not be accostumed to new technologies.
+
+![Color Scheme]()
+   
 <details>
 <summary><strong>Original Site Logic</strong></summary>
 
@@ -38,17 +75,6 @@ I used the Github Projects to manage the process using an agile approach. I crea
 <summary><strong>Database Structure</strong></summary>
 
 ![Database structure](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/database.png)
-
-</details>
-
-<details>
-<summary><strong>Wireframes</strong></summary>
-
-![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/indexwf.png)
-
-![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/signloginwf.png)
-
-![Wireframes](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/alertwf.png)
 
 </details>
 
@@ -314,9 +340,20 @@ Originally the feature to edit the featured image for an Alert was not working. 
 
 The Index Page, Alert Detail Page, Register Page, Post an Alert Page were run through the [w3 HTML Validator](https://validator.w3.org/). There were some errors for trailing slash, misuse of Aria Labels, stray tags and some p elements as child of ul elements and missing alt attributes for images. I was able to correct most of the errors beside the trailing slashes because they happen authomatically in the IDE environment I am using (Codeanywhere) and the alt attributes for the images uploaded through Cloudinary.
 
-Python PEP8 style convention was checked with the [CI Python Linter](https://pep8ci.herokuapp.com/) and it returned a few syntax error due to the Python version compatibility. I amended the lines of codes and all custom made Python files (views.py urls.py models.py forms.py admin.py) passed without errors.
+Python PEP8 style convention was checked with the [CI Python Linter](https://pep8ci.herokuapp.com/) and it returned a few syntax error due to the Python version compatibility. I amended the lines of codes and all custom made Python files (views.py urls.py models.py forms.py) passed without errors.
 
-!
+<details>
+<summary><strong>PEP8</strong></summary>
+
+![views.py](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/viewspep8.png)
+
+![urls.py](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/urlspep8.png)
+
+![models.py](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/modelspep8.png)
+
+![forms.py](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/formspep8.png)
+
+</details>
 
 ### Lighthouse Report
 
