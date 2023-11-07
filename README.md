@@ -86,6 +86,30 @@ I used the Github Projects to manage the process using an agile approach. I crea
 - GitHub repository has been used for hosting the code
 - Font Awesome has been used for the bell icon, aka the logo
 - Favicon.io has been used for the favicon
+- ElephantSQL has been used as database solution
+- Cloudinary has been used to store media files
+
+### Django Packages
+
+The following Django packages have been installed for this project:
+
+asgiref==3.7.2
+cloudinary==1.36.0
+dj-database-url==0.5.0
+dj3-cloudinary-storage==0.0.6
+Django==3.2.22
+django-allauth==0.57.0
+django-crispy-forms==1.14.0
+django-summernote==0.8.20.0
+gunicorn==21.2.0
+oauthlib==3.2.2
+psycopg2==2.9.9
+PyJWT==2.8.0
+python3-openid==3.2.0
+pytz==2023.3.post1
+requests-oauthlib==1.3.1
+sqlparse==0.4.4
+whitenoise==5.3.0
 
 ## Features
 
@@ -408,7 +432,21 @@ The Lighthouse Report showed first some area of improvements for Accessibility a
 
 ## Deployment
 
-The website was deployed to Heroku by following these steps:
+The website uses [ElephantSQL](https://www.elephantsql.com/) for its database.
+
+- I signed up with my GitHub account
+- I created a new instance
+- The free plan was selected
+- I selected Europe as region
+- Once created I was able to access the url and password for the database
+
+The website uses [Cloudinary](https://cloudinary.com/) for storing media files
+
+- I created an account in Cloudinary
+- I signed in
+- I copied the API environment variable
+
+The website was deployed to [Heroku](https://heroku.com/) by following these steps:
 
 - I created an account in Heroku
 - Once logged in, I created a new app
@@ -417,6 +455,14 @@ The website was deployed to Heroku by following these steps:
 - I went to the deploy tab and connected the GitHub repository
 - I went to Manual deploy and chose Main branch
 - I clicked on deploy
+
+## Development
+
+Developers interested in this website can clone/fork this repository for local development:
+
+- Go to the [GitHub Repository](https://github.com/AlessandroRossi87/project-4-blog)
+- Click the fork button on the top right of the page
+- You have now created a duplicate of the project in your GitHub repository
 
 ## Credits
 
