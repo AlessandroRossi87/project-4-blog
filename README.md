@@ -32,6 +32,8 @@ Schöneberg Alert is a digital community pinboard for the neighborhood of Schön
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## User-Experience-Design
 
 ## Strategy
