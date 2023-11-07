@@ -6,6 +6,32 @@ Schöneberg Alert is a digital community pinboard for the neighborhood of Schön
 
 [Link to deployed website](https://project4-pinboard-1c32e796b2e1.herokuapp.com/)
 
+## Table of Contents
+
+- [Schöneberg Alert](#schöneberg-alert)
+  - [Table of Contents](#table-of-contents)
+  - [User-Experience-Design](#user-experience-design)
+  - [Strategy](#strategy)
+    - [Site Goals](#site-goals)
+    - [Design](#design)
+  - [Agile methodology](#agile-methodology)
+  - [Technologies](#technologies)
+    - [Django Packages](#django-packages)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+  - [Testing](#testing)
+    - [Accessibility](#accessibility)
+    - [Solved bugs](#solved-bugs)
+  - [Validators](#validators)
+    - [Lighthouse Report](#lighthouse-report)
+  - [Deployment](#deployment)
+  - [Development](#development)
+  - [Credits](#credits)
+  - [Acknowledgments](#acknowledgments)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## User-Experience-Design
 
 ## Strategy
