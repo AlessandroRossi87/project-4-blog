@@ -358,7 +358,32 @@ Originally the feature to edit the featured image for an Alert was not working. 
 
 ## Validators
 
-The Index Page, Alert Detail Page, Register Page, Post an Alert Page were run through the [w3 HTML Validator](https://validator.w3.org/). There were some errors for trailing slash, misuse of Aria Labels, stray tags and some p elements as child of ul elements and missing alt attributes for images. I was able to correct most of the errors beside the trailing slashes because they happen authomatically in the IDE environment I am using (Codeanywhere) and the alt attributes for the images uploaded through Cloudinary.
+The Index Page, Alert Detail Page, Register Page, Post an Alert Page were run through the [W3 HTML Validator](https://validator.w3.org/). There were some errors for trailing slash, misuse of Aria Labels, stray tags and some p elements as child of ul elements and missing alt attributes for images. I was able to correct most of the errors beside the trailing slashes because they happen authomatically in the IDE environment I am using (Codeanywhere) and the alt attributes for the images uploaded through Cloudinary.
+
+<details>
+<summary><strong>HTML</strong></summary>
+
+![CSS validator](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/htmlvalidator.png)
+
+</details>
+
+The website was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and passed with no errors found.
+
+<details>
+<summary><strong>CSS</strong></summary>
+
+![CSS validator](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/cssvalidator.png)
+
+</details>
+
+The website's script.js contained one function and it was run through the [JSHint JavaScript Validator](https://jshint.com) and passed with just one warning indicating that the code is using ES6 features.
+
+<details>
+<summary><strong>JavaScript</strong></summary>
+
+![JavaScript validator](https://github.com/AlessandroRossi87/project-4-blog/blob/main/docs/images/jsvalidator.png)
+
+</details>
 
 Python PEP8 style convention was checked with the [CI Python Linter](https://pep8ci.herokuapp.com/) and it returned a few syntax error due to the Python version compatibility. I amended the lines of codes and all custom made Python files (views.py urls.py models.py forms.py) passed without errors.
 
